@@ -29,12 +29,12 @@ class Player extends Component {
     render() {
         const { size, position: { top, left } } = this.props;
 
-        return ( < div ref = { n => { this.player = n } } >
+        return ( <
+            div ref = { n => { this.player = n } } >
             <
             Square size = { size }
             position = {
-                { top, left }
-            }
+                { top, left } }
             color = 'darkgray' / >
             <
             /div>

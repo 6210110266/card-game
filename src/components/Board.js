@@ -12,4 +12,7 @@ const style = (dimension) => {
     };
 };
 
-export default ({ dimension, children }) => ( < div style = { style(dimension) } > { children } < /div>)
+export default ({ dimension, children }) => ( <
+    div style = { style(dimension) } > { children } <
+    /div>
+)

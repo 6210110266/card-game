@@ -17,6 +17,7 @@ const GameInfo = ({
     timeElapsed,
     playerScore,
     highScore,
+    globalHighScore = 'Loading...'
 }) => {
     const { container, info } = style();
     return ( <
@@ -26,12 +27,14 @@ const GameInfo = ({
         div style = { info } >
         <
         p > Time: { timeElapsed } < /p> <
-        p > Score: { playerScore } < /p> < /
-        div > <
+        p > Score: { playerScore } < /p> <
+        /div> <
         div style = { info } >
         <
-        p > High Score: { highScore } < /p>  < /
-        div >
+        p > High Score: { highScore } < /p> <
+        p > Global High Score: { globalHighScore } < /p> <
+        /div> <
+        /div>
     )
 }
 
@@ -39,6 +42,7 @@ GameInfo.propTypes = {
     timeElapsed: PropTypes.number.isRequired,
     playerScore: PropTypes.number.isRequired,
     highScore: PropTypes.number.isRequired,
+    // globalHighScore: PropTypes.number
 };
 
 export default GameInfo;
